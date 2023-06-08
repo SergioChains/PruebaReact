@@ -6,7 +6,6 @@ import Image1 from './images/imagen1.jpg';
 import Image2 from './images/imagen2.png';
 import Image3 from './images/imagen3.jpg';
 
-// const images = [Image1, Image2, Image3];
 const images = [
   { src: Image1, alt: 'Fotografía 1' },
   { src: Image2, alt: 'Fotografía 2' },
@@ -14,6 +13,7 @@ const images = [
 ];
 
 function App() {
+
 
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -45,15 +45,13 @@ function App() {
 
       <div className="Section-One">
       <div className="bg-black flex justify-center items-center h-screen bg-gray-100">
-          <div className="flex w-3/5">
-            <div className="w-1/2">
+          <div className="flex w-full">
+            <figure className="w-1/2 vertical-align: middle">
             <img
-  src={images[currentImage].src}
-  alt={images[currentImage].alt}
-  className="w-full h-auto transition-opacity duration-500"
-/>
-
-            </div>
+              src={images[currentImage].src}
+              alt={images[currentImage].alt}
+              className="w-full h-auto transition-opacity duration-500"/>
+            </figure>
             <div className="w-1/2 p-8">
               <h2 className="text-2xl font-bold mb-4">Formulario</h2>
               <input
@@ -84,7 +82,23 @@ function App() {
 
     <div className="Section-Two">
       <body>
-          <h1>Mau me la jala</h1>
+        <div>    
+           <h1 className=" text-4xl font-bold mb-4 font-Graduate">ENCUENTRA EL AUTO QUE NECESITAS</h1>
+           <div className="carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image.src}
+                alt={image.alt}
+                className={`w-full h-auto transition-opacity duration-500 ${
+                  index === currentImage ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+        <div>
+        </div>
       </body>
     </div>
     <div className="Section-Three">
