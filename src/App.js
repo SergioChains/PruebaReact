@@ -1,12 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-
 import React, { useState, useEffect } from 'react';
-// import Card from './Card';
 import Image1 from './images/imagen1.jpg';
 import Image2 from './images/imagen2.jpg';
 import Image3 from './images/imagen3.jpg';
-// import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+//import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const images = [
   { src: Image1, alt: 'Fotografía 1' },
@@ -32,17 +30,17 @@ function App() {
     {
       title: '------',
       content: 'Vehiculos garantizados y confiables',
-      imageUrl: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'
+      imageUrl: "https://c8.alamy.com/compes/pex7ej/icono-de-coche-ilustracion-vectorial-negro-sobre-fondo-blanco-pex7ej.jpg"
     },
     {
       title: '-----',
       content: 'Pagos seguros y sin riesgos',
-      imageUrl: 'https://ep01.epimg.net/elpais/imagenes/2019/10/30/album/1572424649_614672_1572453030_noticia_normal.jpg'
+      imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/000/357/048/small/3__2821_29.jpg'
     },
     {
       title: '-----',
       content: 'Proceso seguro y rapido',
-      imageUrl: 'https://cdn.pixabay.com/photo/2017/10/17/16/10/fantasy-2861107_1280.jpg'
+      imageUrl: 'https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-document-vector-icon-png-image_355823.jpg'
     }
   ];
 
@@ -61,9 +59,9 @@ function App() {
   return (
     <div className="App">
 
-<header className="bg-black text-lg text-white">
+<header className="bg-black text-xl text-white">
       <div className="container mx-auto bg-black flex items-center justify-between p-4">
-        <img src={logo} className="h-8" alt="logo" />
+        <img src="src/images/Logo.jpg" className="h-14" alt="logo" />
         <nav className="space-x-4">
           <a href="Section-1" className="text-white hover:text-gray-300">Inicio</a>
           <a href="Section-2" className="text-white hover:text-gray-300">Inventario</a>
@@ -143,7 +141,7 @@ function App() {
           </div>
         </div>
       </div>
-    
+     
 
     <div className="Section-Two">
       <body>
@@ -181,25 +179,32 @@ function App() {
       </body>
     </div>
     <div className="Section-Four">
-      <body>
-          <h1>Said y Mau me la jalan</h1>
-      </body>
-    </div>
-    <div className="Section-Five">
+          <div><h1 className='text-4xl font-bold mb-2 font-Graduate text-white bg-black'>KUMO MOTORS</h1>
+          <h2 className='text-lg'>Te podria interesar</h2>
+   </div>
+   <div>
+
+   </div>
+           </div>
     
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.8364279490553!2d-86.83550633444858!3d21.14106167821356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2bbcccf5f36f%3A0x9292707424b50383!2sKumo%20Motors%20Seminuevos!5e0!3m2!1ses!2smx!4v1686599551497!5m2!1ses!2smx" width="1500" height="600" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     
-    </div>
+    <div className="bg-black height-auto width-auto">
+      <div className='bg-black'>
+      <h1 className='text-4xl font-bold mb-4 font-Graduate text-white bg-black  inset-x-0 top-0'>Ven a visitarnos</h1>
+      </div>
+      <div className='container mx-auto items-center content-center p-10'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.8364279490553!2d-86.83550633444858!3d21.14106167821356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2bbcccf5f36f%3A0x9292707424b50383!2sKumo%20Motors%20Seminuevos!5e0!3m2!1ses!2smx!4v1686599551497!5m2!1ses!2smx" width="1500" height="600" content='center'  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+       </div>
 
     <footer className="site-footer">
     
         <div class="row">
     
           <div class="col-xs-6 col-md-3">
-            <h6>Contacto</h6>
+            <h6>Contacto: </h6>
             <ul class="footer-links">
-              <li><a href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk">9988807458</a></li>
-              <li><a href="mailto:kumomotors_ventas@hotmail.com?subject=Contactar&body=Buenas%20tardes%2C%20quisiera%20ponerme%20en%20contacto%20para%20obtener%20mas%20informaci%C3%B3n.%20">Correo Electrónico </a></li>
+              <li><i class="fa-solid fa-phone"></i> <a href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk">9988807458</a></li>
+              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kumomotors_ventas@hotmail.com?subject=Contactar&body=Buenas%20tardes%2C%20quisiera%20ponerme%20en%20contacto%20para%20obtener%20mas%20informaci%C3%B3n.%20">Correo Electrónico </a></li>
        
             </ul>
           </div>
@@ -207,7 +212,7 @@ function App() {
           <div class="col-xs-6 col-md-3">
             <h6>Redes Sociales</h6>
             <ul class="footer-links">
-              <li><a href="https://www.facebook.com/KumoMotors">Facebook</a></li>
+              <li><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/KumoMotors">Facebook</a></li>
             </ul>
           </div>
         </div>
@@ -222,8 +227,8 @@ function App() {
           
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="https://www.facebook.com/KumoMotors"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk"><i class="fab fa-WhatsApp"></i></a></li></ul>
+              <li><a class="facebook" href="https://www.facebook.com/KumoMotors"><i class="fab fa-xl fa-facebook"></i></a></li>
+              <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk"><i class="fa-brands fa-xl fa-whatsapp"></i></a></li></ul>
           </div>
         </div>
       
@@ -232,30 +237,5 @@ function App() {
  );
    }
 
-
-
-
-  //  <footer className="bg-gray-900 py-8">
-  //     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-  //       <div className="text-white mb-4 md:mb-0">
-  //         <h4 className="text-lg font-bold">Contacto</h4>
-  //         <p>Email: ejemplo@example.com</p>
-  //         <p>Teléfono: 123-456-7890</p>
-  //         <p>Dirección: Calle Principal, Ciudad</p>
-  //       </div>
-  //       <div className="flex space-x-4">
-  //         <a href="#" className="text-white hover:text-gray-300">
-  //           <FaFacebook size={24} />
-  //         </a>
-  //         <a href="#" className="text-white hover:text-gray-300">
-  //           <FaTwitter size={24} />
-  //         </a>
-  //         <a href="#" className="text-white hover:text-gray-300">
-  //           <FaInstagram size={24} />
-  //         </a>
-  //       </div>
-  //     </div>
-  //   </footer>
-   
 
 export default App;
