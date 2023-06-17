@@ -5,6 +5,10 @@ import Image1 from './images/imagen1.jpg';
 import Image2 from './images/imagen2.jpg';
 import Image3 from './images/imagen3.jpg';
 //import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+// @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
 const images = [
   { src: Image1, alt: 'Fotografía 1' },
@@ -12,38 +16,40 @@ const images = [
   { src: Image3, alt: 'Fotografía 3' }
 ];
  
-function Card({ title, content, imageUrl }) {
-  return (
-    <div className="bg-black p-6 rounded-lg shadow-md">
-      <div className="mb-4">
-        <img src={imageUrl} alt={title} className="w-full h-auto rounded-md" />
-      </div>
-      <h2 className="text-xl font-bold mb-2s">{title}</h2>
-      <p className='text-xl'>{content}</p>
-    </div>
-  );
-}
+// function Card({ title, content, imageUrl }) {
+//   return (
+//     <div className="bg-black p-6 rounded-lg shadow-md">
+//       <div className="mb-4">
+//         <img src={imageUrl} alt={title} className="w-full h-auto rounded-md" />
+//       </div>
+//       <h2 className="text-xl font-bold mb-2s">{title}</h2>
+//       <p className='text-xl'>{content}</p>
+//     </div>
+//   );
+// }
 
 function App() {
 
-  const cards = [
-    {
-      title: '------',
-      content: 'Vehiculos garantizados y confiables',
-      imageUrl: "https://c8.alamy.com/compes/pex7ej/icono-de-coche-ilustracion-vectorial-negro-sobre-fondo-blanco-pex7ej.jpg"
-    },
-    {
-      title: '-----',
-      content: 'Pagos seguros y sin riesgos',
-      imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/000/357/048/small/3__2821_29.jpg'
-    },
-    {
-      title: '-----',
-      content: 'Proceso seguro y rapido',
-      imageUrl: 'https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-document-vector-icon-png-image_355823.jpg'
-    }
-  ];
+  // const cards = [
+  //   {
+  //     title: '---------',
+  //     content: 'Vehiculos garantizados y confiables',
+  //     imageUrl: 'https://c8.alamy.com/compes/pex7ej/icono-de-coche-ilustracion-vectorial-negro-sobre-fondo-blanco-pex7ej.jpg'
+  //   },
+  //   {
+  //     title: '---------',
+  //     content: 'Pagos seguros y sin riesgos',
+  //     imageUrl: 'https://static.vecteezy.com/system/resources/thumbnails/000/357/048/small/3__2821_29.jpg'
+  //   },
+  //   {
+  //     title: '---------',
+  //     content: 'Proceso seguro y rapido',
+  //     imageUrl: 'https://png.pngtree.com/png-vector/20190129/ourlarge/pngtree-document-vector-icon-png-image_355823.jpg'
+  //   }
+  // ];
 
+ 
+  
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -55,33 +61,62 @@ function App() {
       clearInterval(interval);
     };
   }, []);
+  
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   const elementosCarousel = document.querySelectorAll('.carousel');
+  //   MIDIAccess.Carousel.init(elementosCarousel, {
+  //     duration: 150,
+  //     dist: -80,
+  //     shift: 5,
+  //     padding: 5,
+  //     numVisible: 3,
+  //     indicators: true,
+  //     noWrap: false
+  //   });
+  // });
 
   return (
-    <div className="App">
-
+    
+<div className="App">
+      
+{/* 
 <header className="bg-black text-xl text-white">
       <div className="container mx-auto bg-black flex items-center justify-between p-4">
-        <img src="src/images/Logo.jpg" className="h-14" alt="logo" />
+        <img src={logo} className="h-8" alt="logo" />
         <nav className="space-x-4">
-          <a href="Section-1" className="text-white hover:text-gray-300">Inicio</a>
-          <a href="Section-2" className="text-white hover:text-gray-300">Inventario</a>
-          <a href="Section-3" className="text-white hover:text-gray-300">Quiero vender</a>
-          <a href="Section-4" className="text-white hover:text-gray-300">Contacto</a>
-          <a href="Section-5" className="text-white hover:text-gray-300">Preguntas frecuentes</a>
+          <a href="Section-1" className="text-4xl text-white hover:text-[#1D44B9] hover:underline">Inicio</a>
+          <a href="Section-2" className="text-4xl text-white hover:text-[#1D44B9] hover:underline">Inventario</a>
+          <a href="Section-3" className="text-4xl text-white hover:text-[#1D44B9] hover:underline">Quiero vender</a>
+          <a href="Section-4" className="text-4xl text-white hover:text-[#1D44B9] hover:underline">Contacto</a>
+          <a href="Section-5" className="text-4xl text-white hover:text-[#1D44B9] hover:underline">Preguntas frecuentes</a>
         </nav>
       </div>
-    </header>
+    </header> */}
 
-      <div className="Section-One">
-      <div className="bg-black flex align-center justify-center items-center h-screen border-white">
-          <div className="flex w-auto bg-black">
-            <figure className="w-1/2 content-center">
-            <img
+    <header className="bg-black text-white font-Graduate">
+        <div className="container mx-auto flex items-center justify-between p-4">
+          <img src={logo} className="h-12 md:h-24" alt="logo" />
+          <nav className="space-x-4 text-base md:text-xl">
+            <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Inicio</a>
+            <a href="#Section-2" className="text-white text-3xl hover:text-blue-500 hover:underline">Inventario</a>
+            <a href="#Section-3" className="text-white text-3xl hover:text-blue-500 hover:underline">Quiero vender</a>
+            <a href="#Section-4" className="text-white text-3xl hover:text-blue-500 hover:underline">Contacto</a>
+            <a href="#Section-5" className="text-white text-3xl hover:text-blue-500 hover:underline">Preguntas frecuentes</a>
+          </nav>
+        </div>
+      </header>
+
+
+      {/* <div className="p-20 bg-black flex align-center justify-center items-center h-screen">
+            <div className='p-20 flex items-center justify-center h-screen w-full'>
+              <img
               src={images[currentImage].src}
               alt={images[currentImage].alt}
-              className="w-full h-auto transition-opacity duration-500"/>
-            </figure>
-            <div className="w-1/2 p-8 shadow-white">
+              className="w-full h-auto transition-opacity duration-300"/>
+            
+            </div>
+            
+            <div className="w-full p-20 shadow-white p-8">
               <h2 className="text-2xl font-bold mb-4 text-white">¡Te compramos tu auto!</h2>
               <div className='display flex'>
               <input 
@@ -138,13 +173,107 @@ function App() {
               </div>
               
             </div>
+          </div> */}
+    
+<div className='flex'>
+    <section id="Section-1" className="bg-black py-12 w-full h-auto content-center justify-center items-center">
+        <div className="container mx-auto content-center justify-center items-center">
+          <div className="flex justify-center">
+            <img src={images[currentImage].src} alt={images[currentImage].alt} className="w-full h-auto  rounded-lg" />
+          </div>
+        </div>
+      </section>
+      <div className="bg-black w-full p-20 shadow-white">
+              <h2 className="text-2xl font-bold font-Graduate mb-4 text-white">¡Te compramos tu auto!</h2>
+              <div className='display flex'>
+              <input 
+                type="text"
+                placeholder="Marca"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-white text-xl rounded mr-2 rounded-md"
+              />
+              <input
+                type="text"
+                placeholder="Modelo"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded ml-2 rounded-md"
+              />
+              </div>
+              <div className='display flex'>
+              <input
+                type="text"
+                placeholder="Año"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded mr-2 rounded-md"
+              />
+              <input
+                type="text"
+                placeholder="Version"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded ml-2 rounded-md"
+              />
+              </div>
+              
+              <input
+                type="email"
+                placeholder="Correo electronico"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded-md"
+              />
+              <input
+                type="text"
+                placeholder="Telefono"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded-md"
+              />
+              <textarea
+                placeholder="Motivo de venta"
+                className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded-md"
+              ></textarea>
+              <div className='content-end content-between'>
+              <button
+                type="submit"
+                className="w-26 px-4 py-1 bg-[#1D44B9] text-xl text-white rounded-md hover:bg-blue-600 ml-12"
+              >
+                Limpiar
+              </button>
+              <button
+                type="submit"
+                className="w-30 px-4 py-1 bg-[#DC5F00] text-xl text-white rounded-md hover:bg-orange-500 ml-2"
+              >
+                Contactar
+              </button>
+              </div>
+              </div>
+              </div>
+
+
+    <div className="Section-Two">
+
+{/* <div className='container'>
+  <div className='row'>
+    <div className='col s12'>
+      <div className='carousel center-align'>
+        <div className='carousel-item'>
+          <div className='linea-sivision'>
+            <img src='images/imagen1.jpg' alt=''></img>
           </div>
         </div>
       </div>
-     
+      <div className='carousel center-align'>
+        <div className='carousel-item'>
+          <div className='linea-sivision'>
+            <img src='images/imagen2.jpg' alt=''></img>
+          </div>
+        </div>
+      </div>
+      <div className='carousel center-align'>
+        <div className='carousel-item'>
+          <div className='linea-sivision'>
+            <img src='images/imagen3.jpg' alt=''></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> */}
 
-    <div className="Section-Two">
-      <body>
+
+     <body>
         <div>    
            <h1 className=" text-4xl font-bold mb-4 font-Graduate">ENCUENTRA EL AUTO QUE NECESITAS</h1>
            <div className="carousel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -162,10 +291,16 @@ function App() {
         </div>
         <div>
         </div>
-      </body>
+      </body> 
     </div>
-    <div className="Section-Three bg-gray-100 py-10">
-      <body>
+    <div className="Section-Three bg-gray-100 py-10 ">
+
+
+      <div className=' flex content-center justify-center items-center h-screen'>
+        <img src='./src/images/imagen1.jpg' alt='A'></img>
+
+      </div>
+      {/* <body>
         <div>
             <h1 className='text-4xl font-bold mb-4 font-Graduate'>¡Somos tu mejor opcion!</h1>
         </div>
@@ -176,15 +311,74 @@ function App() {
             ))}
           </div>
           </div>
-      </body>
+      </body> */}
     </div>
     <div className="Section-Four">
           <div><h1 className='text-4xl font-bold mb-2 font-Graduate text-white bg-black'>KUMO MOTORS</h1>
           <h2 className='text-lg'>Te podria interesar</h2>
    </div>
-   <div>
+<hr></hr>
+<div class="">
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-6">
+        <h2>PREGUNTAS FRECUENTES</h2>
+        <div class="row">
+          <div class="col-sm-6">
+        <li>¿Como vender mi auto?</li>
+          </div>
+          <div class="col-sm-6">
+            <li>¿Como compro un auto?</li>
+          </div>
+          <div class="col-sm-6">
+            <li>¿Que autos tienen?</li>
+          </div>
+          <div class="col-sm-6">
+         <li> <a className='text-white hover:text-blue-500 hover:underline' href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk">Contacto: 9988807458</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-pull-6">
+        <h2>Chupan</h2>
+        <div class="row">
+          <div class="col-sm-6">
+          <li><i class="fa-solid fa-phone"></i> <a href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk">Telefono: 9988807458</a></li>
+          </div>
+          <div class="col-sm-6">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kumomotors_ventas@hotmail.com?subject=Contactar&body=Buenas%20tardes%2C%20quisiera%20ponerme%20en%20contacto%20para%20obtener%20mas%20informaci%C3%B3n.%20">Correo Electrónico </a></li>
+          </div>
+          <div class="col-sm-6">
+            <li><a href="https://goo.gl/maps/RLBDU7EaGMWbS1M19">Direccion</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className='bg-white'>
 
-   </div>
+  </div>
+ 
+   {/* <div class="col">
+    <div class="row">
+    
+    <div class="col-xs-6 col-md-3">
+      <h6>Contacto: </h6>
+      <ul class="footer-links">
+        <li><i class="fa-solid fa-phone"></i> <a href="https://api.whatsapp.com/send?phone=%2B529988807458&data=ARDBBY6AKTZiCjnexUpEKk-Tis_khlkk1mc6IKV_w0KXjUOLTcXUKKbjY5yMaBUXqVhFPz1bj-oyg97kuTUbTTTvQmXF5DBzU--q08clS5DDxHNzv-Zl75PRRMSIvOUBJtx7K1RxNZ-VJTNekZiRRrMx6Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR0XpXYQgTtFLHP5CM2qyI3lyAFKCHafei0LcgaM-iyyIhMYtCH4FOxcPQk">9988807458</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:kumomotors_ventas@hotmail.com?subject=Contactar&body=Buenas%20tardes%2C%20quisiera%20ponerme%20en%20contacto%20para%20obtener%20mas%20informaci%C3%B3n.%20">Correo Electrónico </a></li>
+ 
+      </ul>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <h6>Redes Sociales</h6>
+      <ul class="footer-links">
+        <li><i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/KumoMotors">Facebook</a></li>
+      </ul>
+    </div>
+    </div>
+
+  </div> */}
+
            </div>
     
     <div className="bg-black height-auto width-auto">

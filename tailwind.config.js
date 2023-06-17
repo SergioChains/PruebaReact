@@ -4,6 +4,18 @@ module.exports = {
   theme: {
     extend: {},
   },
+  variants:{},
   plugins: [],
 }
+
+
+// module.exports = {
+//   purge: [],
+//   darkMode: false,
+//   theme: {
+//     extend: {},
+//   },
+//   variants: {},
+//   plugins: [],
+// }
 
