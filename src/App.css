@@ -45,7 +45,7 @@ html{
 
 }
 
-.ImgCard {
+/* .ImgCard {
   width: 300px;
   transform: translatexX(0px);
   animation: float 6s ease-out infinite;
@@ -60,7 +60,7 @@ html{
   100%{
       transform: transaleY(0px);
     }
-}
+} */
 
 .Section-Two{
   background-color: rgb(217, 217, 217);

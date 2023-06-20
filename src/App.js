@@ -17,7 +17,7 @@ function Card({ title, content, imageUrl }) {
       <div className="mb-4">
         <img src={imageUrl} alt={title} className="w-full h-auto rounded-full" />
       </div>
-      <h2 className="text-xl font-bold mb-2s">{title}</h2>
+      <h2 className="text-xl font-serif">{title}</h2>
       <p className='text-xl'>{content}</p>
     </div>
   );
@@ -79,7 +79,7 @@ function App() {
         <div className="container mx-auto flex items-center justify-between p-4">
           <img src={logo} className="h-12 md:h-24" alt="logo" />
           <nav className="space-x-4 text-base md:text-xl">
-            {/* <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Inicio</a> */}
+            <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Inicio</a>
             <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Inventario</a>
             <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Quiero vender</a>
             <a href="#Section-Four" className="text-white text-3xl hover:text-blue-500 hover:underline">Contacto</a>
@@ -90,7 +90,7 @@ function App() {
 
     
 <div className='flex font-serif'>
-    <section id="Section-1" className="bg-black p-20 w-screen h-auto content-center justify-center items-center">
+    <section id="Section-1" className="bg-black p-10 w-full h-auto content-center justify-center items-center">
         <div className="container mx-auto content-center justify-center items-center w-auto h-auto">
           <div className="flex justify-center content-center justify-center items-center w-auto h-auto">
             <img src={images[currentImage].src} alt={images[currentImage].alt} className="w-604px h-553px content-center justify-center items-center rounded-lg" />
@@ -99,7 +99,7 @@ function App() {
       </section>
 
       <div className="bg-black w-screen p-20 ">
-      <section className='SectionFor bg-black w-589px h-693px shadow hover:shadow-[20px_40px_60px_-15px_rgba(255,255,255,255)]'>
+      <section className='SectionFor bg-black w-589px h-693px shadow hover:shadow-[10px_20px_20px_-10px_rgba(255,255,255,255)]'>
               <h2 className="text-2xl font-bold font-Graduate mb-4 text-white">¡TE COMPRAMOS TU AUTO!</h2>
               <div className='display flex'>
               <input 
@@ -140,7 +140,7 @@ function App() {
                 placeholder="Motivo de venta"
                 className="bg-black w-full mb-4 px-4 py-2 border border-white text-xl text-white rounded-md"
               ></textarea>
-              <div className='flex column content-between justify-end'>
+              <div className='flex column content-between justify-end p-2'>
               <button
                 type="submit"
                 className="w-26 px-4 py-1 bg-[#1D44B9] text-xl text-white rounded-md hover:bg-blue-600 ml-12"
@@ -217,7 +217,7 @@ function App() {
         <div>
             <h1 className='text-4xl font-bold mb-4 font-serif'>¡Somos tu mejor opcion!</h1>
         </div>
-        <div className="container mx-auto font-serif">
+        <div className="container mx-auto font-serif px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {cards.map((card, index) => (
               <Card key={index} title={card.title} content={card.content} imageUrl={card.imageUrl} />
@@ -227,10 +227,11 @@ function App() {
       </body>
     </div>
     <div id='Section-Four' className="Section-Four font-serif">
+    <br></br>
           <div><h1 className='text-4xl font-bold mb-2 text-white bg-black'>KUMO MOTORS</h1>
           <h2 className='text-lg'>Te podria interesar</h2>
    </div>
-<hr></hr>
+<br></br>
 <div class="">
     <div class="grid grid-cols-2">
       <div class="col-sm-6 col-sm-push-6">
@@ -276,13 +277,15 @@ function App() {
       <h1 className='text-4xl font-bold mb-4 font-Graduate text-white bg-black  inset-x-0 top-0'>Ven a visitarnos</h1>
       </div>
       <div className='container mx-auto items-center content-center p-10 map-responsive'>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.283398881777!2d-86.83787592409493!3d21.141117183908754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2bbcccf5f36f%3A0x9292707424b50383!2sKumo%20Motors%20Seminuevos!5e0!3m2!1ses!2smx!4v1687276898673!5m2!1ses!2smx" width="1224" height="600" content='center' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe className="p-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.283398881777!2d-86.83787592409493!3d21.141117183908754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2bbcccf5f36f%3A0x9292707424b50383!2sKumo%20Motors%20Seminuevos!5e0!3m2!1ses!2smx!4v1687276898673!5m2!1ses!2smx" width="1224" height="600" content='center' allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
         {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.8364279490553!2d-86.83550633444858!3d21.14106167821356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2bbcccf5f36f%3A0x9292707424b50383!2sKumo%20Motors%20Seminuevos!5e0!3m2!1ses!2smx!4v1686599551497!5m2!1ses!2smx" width="1500" height="600" content='center'  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    */}
+<br></br>
+<br></br>
+<br></br>
    </div>
        </div>
-<br className='bg-black'></br>
-<br className='bg-black'></br>
+
     <footer className="site-footer font-serif">
     
         <div class="row">
