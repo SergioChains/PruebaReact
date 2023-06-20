@@ -18,6 +18,10 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 2vh;
@@ -37,24 +41,40 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  font-family: cursive;
+  font-family: serif;
 
 }
 
-/* .Section-Two{
-  background-color: rgb(0, 0, 0);
-  min-height: 100vh;
+.ImgCard {
+  width: 300px;
+  transform: translatexX(0px);
+  animation: float 6s ease-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: transalteY(0px);
+  }
+  50%{
+    transform: transalteY(-60px);
+    }
+  100%{
+      transform: transaleY(0px);
+    }
+}
+
+.Section-Two{
+  background-color: rgb(217, 217, 217);
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 
-} */
+}
 .Section-Three{
   /* background-image: url("./Opciones.svg"); */
   background-color: rgb(0, 0, 0);
   padding: auto;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -71,6 +91,35 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+}
+
+
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:30%;
+
+  background-color: black;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
 
 }
 
