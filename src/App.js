@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import logo from './LogoKM.png'
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Image1 from './images/imagen1.jpg';
@@ -75,20 +76,20 @@ function App() {
 <div className="App">
 
 
-    <header className="bg-black text-white font-serif">
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <img src={logo} className="h-12 md:h-24" alt="logo" />
+    <header className="bg-black text-black font-serif">
+        <div className=" px-20 flex items-center justify-between p-4">
+          <img src={logo} className="md:h-32 w-40" alt="logo" />
           <nav className="space-x-4 text-base md:text-xl">
-            <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Inicio</a>
-            <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Inventario</a>
-            <a href="#Section-1" className="text-white text-3xl hover:text-blue-500 hover:underline">Quiero vender</a>
-            <a href="#Section-Four" className="text-white text-3xl hover:text-blue-500 hover:underline">Contacto</a>
-            <a href="#Section-Four" className="text-white text-3xl hover:text-blue-500 hover:underline">Preguntas frecuentes</a>
+            <a href="#Section-1" className="text-white text-2xl hover:text-blue-500 hover:underline">Inicio</a>
+            <a href="#Section-1" className="text-white text-2xl hover:text-blue-500 hover:underline">Inventario</a>
+            <a href="#Section-1" className="text-white text-2xl hover:text-blue-500 hover:underline">Quiero vender</a>
+            <a href="#Section-Four" className="text-white text-2xl hover:text-blue-500 hover:underline">Contacto</a>
+            <a href="#Section-Four" className="text-white text-2xl hover:text-blue-500 hover:underline">Preguntas frecuentes</a>
           </nav>
         </div>
       </header> 
 
-    
+    <br></br>
 <div className='flex font-serif'>
     <section id="Section-1" className="bg-black p-10 w-full h-auto content-center justify-center items-center">
         <div className="container mx-auto content-center justify-center items-center w-auto h-auto">
