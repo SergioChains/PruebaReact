@@ -1,10 +1,10 @@
-// import logo from './logo.svg';
 import logo from './LogoKM.png'
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Image1 from './images/imagen1.jpg';
 import Image2 from './images/imagen2.jpg';
 import Image3 from './images/imagen3.jpg';
+// import axios from 'axios';
 
 const images = [
   { src: Image1, alt: 'Fotografía 1' },
@@ -12,6 +12,94 @@ const images = [
   { src: Image3, alt: 'Fotografía 3' }
 ];
  
+
+// const FormComponent = () => {
+//   const [formData, setFormData] = useState({
+//     marca: '',
+//     modelo: '',
+//     anio: '',
+//     version: '',
+//     correoElectronico: '',
+//     telefono: '',
+//     motivoVenta: '',
+//   });
+
+//   const handleInputChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     try {
+//       await axios.post('http://localhost:3000/api/form', formData);
+//       console.log('Formulario enviado correctamente');
+//       // Realizar cualquier acción adicional después del envío exitoso
+//     } catch (error) {
+//       console.error('Error al enviar el formulario:', error);
+//       // Manejar el error de envío de formulario
+//     }
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input
+//         type="text"
+//         name="marca"
+//         placeholder="Marca"
+//         value={formData.marca}
+//         onChange={handleInputChange}
+//       />
+//       <input
+//         type="text"
+//         name="modelo"
+//         placeholder="Modelo"
+//         value={formData.modelo}
+//         onChange={handleInputChange}
+//       />
+//       <input
+//         type="text"
+//         name="anio"
+//         placeholder="Año"
+//         value={formData.anio}
+//         onChange={handleInputChange}
+//       />
+//       <input
+//         type="text"
+//         name="version"
+//         placeholder="Versión"
+//         value={formData.version}
+//         onChange={handleInputChange}
+//       />
+//       <input
+//         type="email"
+//         name="correoElectronico"
+//         placeholder="Correo Electrónico"
+//         value={formData.correoElectronico}
+//         onChange={handleInputChange}
+//       />
+//       <input
+//         type="text"
+//         name="telefono"
+//         placeholder="Teléfono"
+//         value={formData.telefono}
+//         onChange={handleInputChange}
+//       />
+//       <textarea
+//         name="motivoVenta"
+//         placeholder="Motivo de venta"
+//         value={formData.motivoVenta}
+//         onChange={handleInputChange}
+//       ></textarea>
+//       <button type="submit">Contactar</button>
+//     </form>
+//   );
+// };
+
+
 function Card({ title, content, imageUrl }) {
   return (
     <div className="bg-black p-6 rounded-md shadow hover:shadow-[0_35px_60px_-15px_rgba(255,255,255,255)]">
@@ -57,20 +145,7 @@ function App() {
       clearInterval(interval);
     };
   }, []);
-  
-  // document.addEventListener('DOMContentLoaded', () => {
-  //   const elementosCarousel = document.querySelectorAll('.carousel');
-  //   MIDIAccess.Carousel.init(elementosCarousel, {
-  //     duration: 150,
-  //     dist: -80,
-  //     shift: 5,
-  //     padding: 5,
-  //     numVisible: 3,
-  //     indicators: true,
-  //     noWrap: false
-  //   });
-  // });
-
+ 
   return (
     
 <div className="App">
@@ -99,9 +174,10 @@ function App() {
         </div>
       </section>
 
-      <div className="bg-black w-screen p-20 ">
+      <div className=" bg-black w-screen p-20 ">
       <section className='SectionFor bg-black w-589px h-693px shadow hover:shadow-[10px_20px_20px_-10px_rgba(255,255,255,255)]'>
               <h2 className="text-2xl font-bold font-Graduate mb-4 text-white">¡TE COMPRAMOS TU AUTO!</h2>
+              {/* <FormComponent/> */}
               <div className='display flex'>
               <input 
                 type="text"
