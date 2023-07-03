@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image1 from './images/imagen1.jpg';
 import Image2 from './images/imagen2.jpg';
 import Image3 from './images/imagen3.jpg';
+import Carta from './Carta.svg'
 // import axios from 'axios';
 
 const images = [
@@ -120,6 +121,7 @@ function App() {
       content: 'Vehiculos garantizados y confiables',
       imageUrl: 'https://c8.alamy.com/compes/pex7ej/icono-de-coche-ilustracion-vectorial-negro-sobre-fondo-blanco-pex7ej.jpg'
     },
+    // https://acroadtrip.blob.core.windows.net/marcas-img/alfa-romeo/small.png
     {
       title: '---------',
       content: 'Pagos seguros y sin riesgos',
